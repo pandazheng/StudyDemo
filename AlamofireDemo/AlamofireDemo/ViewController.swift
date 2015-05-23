@@ -20,27 +20,27 @@ class ViewController: UIViewController {
         //GET
         //Alamofire.request(.GET,"http://www.baidu.com")
         
-//        Alamofire.request(.GET,"http://httpbin.org/get",parameters:["foo":"bar"]).response{
-//            (request,response,data,error) in
-//            println(request)
-//            //println(response)
-//            //println(error)
-//        }
-        
-        Alamofire.request(.GET,"http://api.douban.com/labs/bubbler/user/ahbei",parameters:nil).response{
+        Alamofire.request(.GET,"http://httpbin.org/get",parameters:["foo":"bar"]).response{
             (request,response,data,error) in
+            println(request.URLString)
             //println(response)
-            //println(data!)
-            
-            let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data! as! NSData, options: NSJSONReadingOptions.allZeros, error: nil)
-            if let j = json as? NSDictionary
-            {
-                //println(j.description)
-                
-                let homepage : AnyObject? = j["homepage"]
-                println(homepage!)
-            }
+            //println(error)
         }
+        
+//        Alamofire.request(.GET,"http://api.douban.com/labs/bubbler/user/ahbei",parameters:nil).response{
+//            (request,response,data,error) in
+//            //println(response)
+//            //println(data!)
+//            
+//            let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data! as! NSData, options: NSJSONReadingOptions.allZeros, error: nil)
+//            if let j = json as? NSDictionary
+//            {
+//                //println(j.description)
+//                
+//                let homepage : AnyObject? = j["homepage"]
+//                println(homepage!)
+//            }
+//        }
         
 //        Alamofire.request(Method.GET,"http://api.douban.com/labs/bubbler/user/ahbei").responseJSON(options: NSJSONReadingOptions.allZeros) { (req, _, data, _) -> Void in
 //            //println(req.URLString)
