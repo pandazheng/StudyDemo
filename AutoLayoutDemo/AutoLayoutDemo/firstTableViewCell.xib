@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstTableViewCell" id="KGk-i7-Jjw" customClass="firstTableViewCell" customModule="AutoLayoutDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zt-Oz-1il">
+                        <rect key="frame" x="96" y="8" width="496" height="64"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Pez-qd-IGh">
+                        <rect key="frame" x="8" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="AkP-1q-ESA"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Zt-Oz-1il" firstAttribute="leading" secondItem="Pez-qd-IGh" secondAttribute="trailing" constant="8" id="Cri-BB-DJu"/>
+                    <constraint firstItem="1Zt-Oz-1il" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="IQF-B1-GZK"/>
+                    <constraint firstItem="1Zt-Oz-1il" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="TRq-5h-XVh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Pez-qd-IGh" secondAttribute="bottom" constant="-8" id="TZx-di-9jr"/>
+                    <constraint firstItem="1Zt-Oz-1il" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="bmi-gn-VO0"/>
+                    <constraint firstItem="Pez-qd-IGh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cbU-0j-uH8"/>
+                    <constraint firstItem="Pez-qd-IGh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="nLC-6z-QKh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstLabel" destination="1Zt-Oz-1il" id="Hao-lL-pVe"/>
+                <outlet property="logoImageView" destination="Pez-qd-IGh" id="geg-C4-E94"/>
+            </connections>
+            <point key="canvasLocation" x="433" y="433.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="logo" width="186" height="186"/>
+    </resources>
+</document>
