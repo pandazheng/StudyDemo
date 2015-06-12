@@ -29,3 +29,5 @@
 
 //OC代码实例
 (1)ProgressBarView实例代码
+
+(2)Line Controller实例代码
