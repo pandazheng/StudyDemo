@@ -25,5 +25,7 @@
 
 (12)MosaicLayout实例应用代码
 
+(13)iAds实例代码
+
 //OC代码实例
 (1)ProgressBarView实例代码
