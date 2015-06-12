@@ -23,5 +23,7 @@
 
 (11)DCAnimationKit实例代码
 
+(12)MosaicLayout实例应用代码
+
 //OC代码实例
 (1)ProgressBarView实例代码
