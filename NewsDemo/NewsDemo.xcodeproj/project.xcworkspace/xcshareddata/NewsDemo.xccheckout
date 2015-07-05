@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D91E8B2F-9B70-4287-A331-0F0C8C8848B6</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>NewsDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B9F7F05B7B39A090FDE777609535F1FC7A7CA4E2</key>
 		<string>https://github.com/pandazheng/StudyDemo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>NewsDemo/NewsDemo.xcodeproj/project.xcworkspace</string>
+	<string>NewsDemo/NewsDemo.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B9F7F05B7B39A090FDE777609535F1FC7A7CA4E2</key>
